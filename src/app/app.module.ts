@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CiudadDetalleComponent } from './componentes/paginas/ciudades/ciudad-detalle/ciudad-detalle.component';
 import { CiudadListaComponent } from './componentes/paginas/ciudades/ciudad-lista/ciudad-lista.component';
 import { HeaderComponent } from './componentes/header/header.component';
+import { PaisesComponent } from './componentes/paginas/ciudades/paises.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CiudadDetalleComponent,
     CiudadListaComponent,
-    HeaderComponent
+    HeaderComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { HeaderComponent } from './componentes/header/header.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ PaisesComponent ]
 })
 export class AppModule { }

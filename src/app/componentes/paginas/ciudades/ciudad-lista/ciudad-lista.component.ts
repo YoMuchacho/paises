@@ -9,7 +9,7 @@ import { Pais } from 'src/app/componentes/modelos/pais';
   styleUrls: ['./ciudad-lista.component.css']
 })
 export class CiudadListaComponent implements OnInit {
-  private paises: Pais[] = [];
+  paises: Pais[] = [];
 
   constructor(private paisServicio: PaisService) { }
 
